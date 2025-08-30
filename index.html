@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Management System</title>
+  <link rel="stylesheet" href="index.css">
+  
+</head>
+<body>
+  <h1>Employee Management System</h1>
+
+  <form id="employee-form">
+    <input type="hidden" id="employee-id">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="position" placeholder="Position" required>
+    <button type="submit">Save Employee</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th><th>Email</th><th>Position</th><th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="employee-table-body"></tbody>
+  </table>
+
+  <script src="index.js"></script>
+  <script src="server.js"></script>
+</body>
+</html>
